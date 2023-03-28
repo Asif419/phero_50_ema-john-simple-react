@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cart.css'
+import './Cart.css';
 
 const Cart = ({cart}) => {
   const {length} = cart;
@@ -11,7 +11,6 @@ const Cart = ({cart}) => {
   }
   const tax = totalPrice * 7 / 100;
   const grandTotal = totalPrice + totalShipping + tax;
-  
   return (
     <div className='cart'>
       <h4>Order Summary</h4>
