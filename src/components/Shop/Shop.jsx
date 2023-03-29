@@ -23,7 +23,7 @@ const Shop = () => {
       if (addedProduct) {
         // step 3: add quantity
         const quantity = storedCart[id];
-        addedProduct.quantity = quantity;
+        addedProduct.quantity = quantity; // quantity updated both time, 1. in loading (here), 2. click on add to cart. This word had been done because, in database quantity = 0; so, we need to update it when we are clicking on add button (inside handleAddToCart function) and also every time when we are loading the page (here).
         savedCart.push(addedProduct);
       }
       // step 5: set the cart
