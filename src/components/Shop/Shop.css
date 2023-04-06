@@ -9,3 +9,23 @@
   gap: 10px;
   margin: 45px;
 }
+
+.proceed-link {
+  text-decoration: none;
+}
+
+.btn-proceed {
+  background-color: #FF9900;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 46px;
+  margin: 10px auto;
+  border-radius: 4px;
+  color: white;
+  font-size: 21px;
+  font: white;
+  text-decoration: none;
+}
