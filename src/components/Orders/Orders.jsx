@@ -8,6 +8,7 @@ import { deleteShoppingCart, removeFromDb } from '../../utilities/fakedb';
 const Order = () => {
   const savedCart = useLoaderData();
   const [cart, setCart] = useState(savedCart);
+
   const handleRemoveFromCart = (id) => {
     const remaining = cart.filter(product => product.id !== id)
     setCart(remaining);
@@ -17,6 +18,7 @@ const Order = () => {
     setCart([]);
     deleteShoppingCart();
   }
+  
   return (
     <div className='shop-container'>
       <div className='review-container'>
